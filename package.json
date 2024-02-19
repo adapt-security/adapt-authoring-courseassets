@@ -9,9 +9,8 @@
   "repository": "github:adapt-security/adapt-authoring-courseassets",
   "peerDependencies": {
     "adapt-authoring-api": "github:adapt-security/adapt-authoring-api",
-    "adapt-authoring-content": "github:adapt-security/adapt-authoring-content",
-    "adapt-authoring-core": "github:adapt-security/adapt-authoring-core",
-    "adapt-authoring-mongodb": "github:adapt-security/adapt-authoring-mongodb"
+    "adapt-authoring-assets": "github:adapt-security/adapt-authoring-assets",
+    "adapt-authoring-content": "github:adapt-security/adapt-authoring-content"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
