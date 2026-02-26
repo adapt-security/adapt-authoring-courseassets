@@ -7,7 +7,7 @@
       "validate": false,
       "modifying": false,
       "handlers": { "post": "query" },
-      "permissions": { "post": ["read:{scope}"] }
+      "permissions": { "post": ["read:${scope}"] }
     }
   ]
 }
