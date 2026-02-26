@@ -1,13 +1,34 @@
 {
   "root": "courseassets",
+  "schemaName": "courseasset",
+  "collectionName": "courseassets",
   "useDefaultRoutes": false,
   "routes": [
     {
       "route": "/query",
       "validate": false,
       "modifying": false,
-      "handlers": { "post": "query" },
-      "permissions": { "post": ["read:${scope}"] }
+      "handlers": { "post": "queryHandler" },
+      "permissions": { "post": ["read:${scope}"] },
+      "meta": {
+        "post": {
+          "summary": "Query all courseassets",
+          "parameters": [
+            { "name": "limit", "in": "query", "description": "How many results to return" },
+            { "name": "page", "in": "query", "description": "The page of results to return" }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of courseasset documents",
+              "content": {
+                "application/json": {
+                  "schema": { "type": "array", "items": { "$ref": "#/components/schemas/courseasset" } }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   ]
 }
