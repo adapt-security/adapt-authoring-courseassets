@@ -1,0 +1,13 @@
+{
+  "root": "courseassets",
+  "useDefaultRoutes": false,
+  "routes": [
+    {
+      "route": "/query",
+      "validate": false,
+      "modifying": false,
+      "handlers": { "post": "query" },
+      "permissions": { "post": ["read:{scope}"] }
+    }
+  ]
+}
