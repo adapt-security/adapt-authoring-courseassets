@@ -8,7 +8,7 @@
   "main": "index.js",
   "repository": "github:adapt-security/adapt-authoring-courseassets",
   "dependencies": {
-    "adapt-authoring-api": "^3.0.0"
+    "adapt-authoring-api": "^4.0.1"
   },
   "peerDependencies": {
     "adapt-authoring-assets": "^1.3.1",
